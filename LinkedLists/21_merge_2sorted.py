@@ -4,6 +4,8 @@
 #         self.val = x
 #         self.next = None
 
+
+# O(N+M) where N and M are lengths of l1 & l2
 class Solution(object):
     def mergeTwoLists(self, l1, l2):
         """

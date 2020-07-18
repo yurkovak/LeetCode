@@ -1,4 +1,3 @@
-#include <iostream>
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -11,7 +10,7 @@
  */
 
 
-// O(n), where n is num digits in the longest of l1, l2
+// O(N), where N is num digits in the longest of l1, l2
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {

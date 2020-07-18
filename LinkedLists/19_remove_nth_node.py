@@ -4,6 +4,8 @@
 #         self.val = x
 #         self.next = None
 
+
+# O(M), where M is a length of the list
 class Solution(object):
     def removeNthFromEnd(self, head, n):
         """
