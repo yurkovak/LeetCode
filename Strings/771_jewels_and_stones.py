@@ -1,3 +1,4 @@
+# O(J + S)
 class Solution(object):
     def numJewelsInStones(self, J, S):
         """
@@ -5,5 +6,6 @@ class Solution(object):
         :type S: str
         :rtype: int
         """
-        return len(filter(lambda x: x in J, S))
+        J_set = set(J)
+        return len(filter(lambda x: x in J_set, S))
         
