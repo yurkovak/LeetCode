@@ -26,6 +26,7 @@ public:
         
         return std::to_string(bulls) + "A" + std::to_string(cows) + "B";
     }
+    
 protected:
     int char2int(const char c){
         return c - '0';

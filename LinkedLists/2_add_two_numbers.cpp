@@ -10,7 +10,7 @@
  */
 
 
-// O(N), where N is num digits in the longest of l1, l2
+// O(M + N)
 class Solution {
 public:
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {

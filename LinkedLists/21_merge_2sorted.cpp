@@ -10,7 +10,7 @@
  */
 
 
-// O(N+M) where N and M are lengths of l1 & l2
+// O(N + M)
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {

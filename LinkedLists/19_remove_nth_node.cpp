@@ -10,7 +10,7 @@
  */
 
 
-// O(M), where M is a length of the list
+// O(N)
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {

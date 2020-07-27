@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-# O(M), where M is a length of the list
+# O(N)
 class Solution(object):
     def removeNthFromEnd(self, head, n):
         """

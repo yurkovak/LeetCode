@@ -5,7 +5,7 @@
 #         self.next = None
 
 
-# O(N), where N is num digits in the longest of l1, l2
+# O(M + N)
 class Solution(object):
     def addTwoNumbers(self, l1, l2):
         """
