@@ -29,4 +29,5 @@ Solutions in C++ & Python3 for LeetCode problems. New problems will be continuou
 | Problem | Solution | Time complexity | Space complexity |
 | ------ | ------ | ------ | ------ |
 | [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [cpp](Strings/299_bulls_and_cows.cpp) [py](Strings/299_bulls_and_cows.py) | O(N) | O(1) |
+| [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [cpp](Strings/438_all_anagrams.cpp) [py](Strings/438_all_anagrams.py) | O(P + S) | O(1) |
 | [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [cpp](Strings/771_jewels_and_stones.cpp) [py](Strings/771_jewels_and_stones.py) | O(J + S) | O(J) |
