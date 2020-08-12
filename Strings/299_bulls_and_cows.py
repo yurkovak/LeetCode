@@ -1,6 +1,6 @@
 # O(N)
 class Solution(object):
-    def getHint(self, secret: str, guess: str) -> str:
+    def getHint(self, secret, guess):
         secret_map = [0]*10
         for i in range(len(secret)):
             secret_map[int(secret[i])] += 1
@@ -19,4 +19,9 @@ class Solution(object):
                 secret_map[int(g)] -= 1
         
         return str(bulls) + 'A' + str(cows) + 'B'
-        
+
+
+if __name__ == '__main__':
+    secret = input('secret: ')
+    guess = input('guess: ')
+    print('Hint: ', Solution().getHint(secret, guess))

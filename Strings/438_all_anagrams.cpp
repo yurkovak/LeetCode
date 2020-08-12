@@ -1,3 +1,9 @@
+# include <vector>
+#include <string>
+#include <locale>
+#include <iostream>
+
+
 // O(P + S)
 class Solution {
 public:
@@ -44,6 +50,21 @@ public:
     }
 protected:
     int char2ind(char c){
-        return tolower(c, locale()) - 'a';
+        return tolower(c, std::locale()) - 'a';
     }
 };
+
+
+int main(){
+    std::string s, p;
+    std::cout << "s: ";
+    std::cin >> s;
+    std::cout << "p: ";
+    std::cin >> p;
+
+    std::vector<int> res = Solution().findAnagrams(s, p);
+    std::cout << "Anagrams: ";
+    for (int v: res) 
+        std::cout << v << " ";
+    std::cout << std::endl;
+}

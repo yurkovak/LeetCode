@@ -1,3 +1,8 @@
+#include <vector>
+#include <iostream>
+#include <sstream>
+
+
 // O(N)
 class Solution {
 public:
@@ -14,3 +19,19 @@ public:
         return true;
     }
 };
+
+
+int main(){
+    std::string line;
+    std::cout << "Space separated array: ";
+    std::getline(std::cin, line);
+
+    std::vector<int> nums;
+    int v;
+    std::istringstream iss(line);
+    while(iss >> v)
+        nums.push_back(v);
+    
+    std::string answer = Solution().canJump(nums) ? "yes" : "no";
+    std::cout << "Can jump: " << answer << std::endl;
+}

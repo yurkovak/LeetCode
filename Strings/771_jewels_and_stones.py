@@ -7,5 +7,14 @@ class Solution(object):
         :rtype: int
         """
         J_set = set(J)
-        return len(filter(lambda x: x in J_set, S))
-        
+        total = 0
+        for s in S:
+            if s in J_set:
+                total += 1 
+        return total
+
+
+if __name__ == '__main__':
+    J = input('J: ')
+    S = input('S: ')
+    print('Jewels in S: ', Solution().numJewelsInStones(J, S))

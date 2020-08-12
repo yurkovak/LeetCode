@@ -1,6 +1,6 @@
 # O(P + S)
-class Solution:
-    def findAnagrams(self, s: str, p: str) -> List[int]:
+class Solution(object):
+    def findAnagrams(self, s, p):
         p_count, cur_count, result = [0]*26, [0]*26, []
         for c in p:
             p_count[self._char2ind(c)] += 1
@@ -36,3 +36,9 @@ class Solution:
             
     def _char2ind(self, c):
         return ord(c.lower()) - ord('a')
+
+
+if __name__ == '__main__':
+    s = input('s: ')
+    p = input('p: ')
+    print('Anagrams: ', Solution().findAnagrams(s, p))

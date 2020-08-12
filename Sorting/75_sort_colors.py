@@ -1,6 +1,6 @@
 # O(N)
 class Solution(object):
-    def sortColors(self, nums: List[int]) -> None:
+    def sortColors(self, nums) -> None:
         """
         Do not return anything, modify nums in-place instead.
         """
@@ -20,3 +20,10 @@ class Solution(object):
                 right_most[2] += 1
             else:
                 right_most[2] += 1
+
+
+if __name__ == '__main__':
+    nums = input('Space separated colors: ')
+    nums = [int(v) for v in nums.split(' ')]
+    Solution().sortColors(nums)
+    print('Sorted colors: ', nums)

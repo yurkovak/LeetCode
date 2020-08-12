@@ -1,6 +1,6 @@
 # O(N)
 class Solution(object):
-    def canJump(self, nums: List[int]) -> bool:
+    def canJump(self, nums):
         if not nums: 
             return True
         
@@ -13,3 +13,9 @@ class Solution(object):
             maxReach = max(maxReach, el + i)
         
         return True
+
+
+if __name__ == '__main__':
+    nums = input('Space separated array: ')
+    nums = [int(v) for v in nums.split(' ')]
+    print('Can jump: ', 'yes' if Solution().canJump(nums) else 'no')

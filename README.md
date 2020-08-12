@@ -1,6 +1,17 @@
 # HackerRank
 Solutions in C++ & Python3 for LeetCode problems. New problems will be continuously added.  
 
+To compile a *C++* solution run:  
+```
+gcc -Wall path/to/the.cpp -o main -lc++ -std=c++11
+./main
+```  
+For *Python* just do:
+```
+python3 path/to/the.py
+```  
+And follow the prompts.   
+
 # Table of contents
 
 - **Arrays**

@@ -1,8 +1,26 @@
 # Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.next = None
+class ListNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.next = None
+
+
+def List2str(node):
+    vals = []
+    while node:
+        vals.append(str(node.val))
+        node = node.next
+    
+    return ' '.join(vals)
+
+
+def str2List(line):
+    l_head = ListNode(None)
+    l_tail = l_head
+    for v in line.split(' '):
+        l_tail.next = ListNode(int(v))
+        l_tail = l_tail.next
+    return l_head.next
 
 
 # O(M + N)
@@ -29,3 +47,15 @@ class Solution(object):
             l2 = l2.next if l2 else l2
         
         return l_res_head.next
+
+
+if __name__ == '__main__':
+    nums = input('Space separated values of l1: ').strip()
+    l1 = str2List(nums)
+    nums = input('Space separated values of l2: ').strip()
+    l2 = str2List(nums)
+
+    l_sum = Solution().addTwoNumbers(l1, l2)
+    print('Sum: ', List2str(l_sum))
+
+

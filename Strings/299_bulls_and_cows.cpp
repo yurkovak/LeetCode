@@ -1,7 +1,12 @@
+# include <vector>
+#include <string>
+#include <iostream>
+
+
 // O(N)
 class Solution {
 public:
-    string getHint(std::string secret, std::string guess) {
+    std::string getHint(std::string secret, std::string guess) {
         std::vector<unsigned> secret_set(10);
         for (std::size_t i = 0; i < secret.size(); i++)
             secret_set[char2int(secret[i])]++;
@@ -32,3 +37,14 @@ protected:
         return c - '0';
     }
 };
+
+
+int main(){
+    std::string secret, guess;
+    std::cout << "secret: ";
+    std::cin >> secret;
+    std::cout << "guess: ";
+    std::cin >> guess;
+
+    std::cout << "Hint: " << Solution().getHint(secret, guess) << std::endl;
+}
