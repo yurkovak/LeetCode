@@ -1,5 +1,5 @@
 # HackerRank
-Solutions in C++ & Python3 for LeetCode problems. New problems will be continuously added.  
+Solutions in C++ & Python 2 or 3 for LeetCode problems. New problems will be continuously added.  
 
 To compile a *C++* solution run:  
 ```
@@ -8,7 +8,7 @@ gcc -Wall path/to/the.cpp -o main -lc++ -std=c++11
 ```  
 For *Python* just do:
 ```
-python3 path/to/the.py
+python path/to/the.py
 ```  
 And follow the prompts.   
 
@@ -34,6 +34,9 @@ And follow the prompts.
 | Problem | Solution | Time complexity | Space complexity |
 | ------ | ------ | ------ | ------ |
 | [75. Sort Colors](https://leetcode.com/problems/sort-colors/) | [cpp](Sorting/75_sort_colors.cpp) [py](Sorting/75_sort_colors.py) | O(N), one pass | O(1) |
+| [179. Largest Number](https://leetcode.com/problems/largest-number/) | [cpp](Sorting/179_largest_number.cpp) [py](Sorting/179_largest_number.py) | O(SNlogN)<sup>\*</sup> | O(SN)<sup>\*</sup> | 
+  
+<sup>\*</sup>*S = logEL* - [average](https://stackoverflow.com/questions/50261364/explain-why-time-complexity-for-summing-digits-in-a-number-of-length-n-is-ologn) number of digits in an element of the array 
 
 - **Strings**
 
