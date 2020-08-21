@@ -18,6 +18,7 @@ And follow the prompts.
 
 | Problem | Solution | Time complexity | Space complexity |
 | ------ | ------ | ------ | ------ |
+| [48. Rotate Image](https://leetcode.com/problems/rotate-image/) | [cpp](Arrays/48_rotate_image.cpp) [py](Arrays/48_rotate_image.py) | O(N<sup>2</sup>) | O(1) |
 | [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [cpp](Arrays/53_max_subarray.cpp) [py](Arrays/53_max_subarray.py) | O(N) | O(1) |
 | [55. Jump Game](https://leetcode.com/problems/jump-game/) | [cpp](Arrays/55_jump_game.cpp) [py](Arrays/55_jump_game.py) | O(N) | O(1) |
 
