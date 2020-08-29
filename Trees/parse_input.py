@@ -19,7 +19,7 @@ def string2tree(line):
     for v in line.split(' '):
         node_vals.put(v)
 
-    n_val = node_vals.get()
+    n_val = node_vals.get() if not node_vals.empty() else 'null'
     if n_val and n_val != 'null':
         root = TreeNode(int(n_val))
     else:
@@ -32,7 +32,7 @@ def string2tree(line):
         for _ in range(new_level_size):
             cur_node = level.get()
             
-            n_val = node_vals.get()
+            n_val = node_vals.get() if not node_vals.empty() else 'null'
             if n_val != 'null':
                 check_node(cur_node, n_val)
                 new_node = TreeNode(int(n_val))
@@ -41,7 +41,7 @@ def string2tree(line):
             else:
                 level.put(None)
 
-            n_val = node_vals.get() 
+            n_val = node_vals.get() if not node_vals.empty() else 'null'
             if n_val != 'null':
                 check_node(cur_node, n_val)
                 new_node = TreeNode(int(n_val))
