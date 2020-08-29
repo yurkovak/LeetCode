@@ -2,40 +2,7 @@
 #include <iostream>
 #include <sstream>
 
-
-// Definition for singly-linked list.
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode() : val(0), next(nullptr) {}
-    ListNode(int x) : val(x), next(nullptr) {}
-    ListNode(int x, ListNode *next) : val(x), next(next) {}
-};
-
-
-void List2str(const ListNode* node, std::string& out){
-    out = "";
-    while (node)
-    {
-        out += std::to_string(node->val) + " ";
-        node = node->next;
-    }
-}
-
-
-ListNode* str2List(std::string line){
-    ListNode head(0);
-    ListNode* tail = &head;
-    std::istringstream iss(line);
-    int v;
-    while (iss >> v)
-    {
-        tail->next = new ListNode(v);
-        tail = tail->next;
-    }
-    
-    return head.next;
-}
+#include "parse_input.h"
 
 
 // O(M + N)

@@ -1,26 +1,4 @@
-# Definition for singly-linked list.
-class ListNode(object):
-    def __init__(self, x):
-        self.val = x
-        self.next = None
-
-
-def List2str(node):
-    vals = []
-    while node:
-        vals.append(str(node.val))
-        node = node.next
-    
-    return ' '.join(vals)
-
-
-def str2List(line):
-    l_head = ListNode(None)
-    l_tail = l_head
-    for v in line.split(' '):
-        l_tail.next = ListNode(int(v))
-        l_tail = l_tail.next
-    return l_head.next
+from parse_input import *
 
 
 # O(N + M)

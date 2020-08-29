@@ -6,6 +6,12 @@ To compile a *C++* solution run:
 gcc -Wall path/to/the.cpp -o main -lc++ -std=c++11
 ./main
 ```  
+__Note:__ For [LinkedLists](LinkedLists/) and [Trees](Trees/) add `parse_input.cpp` like this:
+```
+gcc -Wall path/to/the.cpp path/to/parse_input.cpp -o main -lc++ -std=c++11
+./main
+```  
+
 For *Python* just do:
 ```
 python path/to/the.py
