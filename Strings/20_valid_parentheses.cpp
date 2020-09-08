@@ -4,6 +4,7 @@
 #include <stack>
 
 
+// O(N)
 class Solution {
 public:
     bool isValid(const std::string& s) {

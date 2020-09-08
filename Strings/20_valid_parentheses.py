@@ -1,6 +1,7 @@
 from collections import deque
 
 
+# O(N)
 class Solution:
     def isValid(self, s):
         pair_p = {'(': ')', '{': '}', '[': ']'}
@@ -18,7 +19,6 @@ class Solution:
 
 
 if __name__ == '__main__':
-    print("String with characters '(', ')', '{', '}': ")
-    s = input()
+    s = input("String with characters '(', ')', '{', '}': ")
 
     print('Is valid:', Solution().isValid(s))
