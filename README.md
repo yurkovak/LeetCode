@@ -1,5 +1,5 @@
 # HackerRank
-Solutions in C++ & Python 2 or 3 for LeetCode problems. New problems will be continuously added.  
+Solutions in C++ & Python 3 for LeetCode problems. New problems will be continuously added.  
 
 To compile a *C++* solution run:  
 ```
@@ -12,9 +12,9 @@ gcc -Wall path/to/the.cpp path/to/parse_input.cpp -o main -lc++ -std=c++11
 ./main
 ```  
 
-For *Python* just do:
+For *Python 3* just do:
 ```
-python path/to/the.py
+python3 path/to/the.py
 ```  
 And follow the prompts.   
 
