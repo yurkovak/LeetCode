@@ -54,6 +54,7 @@ And follow the prompts.
 | [299. Bulls and Cows](https://leetcode.com/problems/bulls-and-cows/) | [cpp](Strings/299_bulls_and_cows.cpp) [py](Strings/299_bulls_and_cows.py) | O(N) | O(1) |
 | [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [cpp](Strings/438_all_anagrams.cpp) [py](Strings/438_all_anagrams.py) | O(P + S) | O(1) |
 | [771. Jewels and Stones](https://leetcode.com/problems/jewels-and-stones/) | [cpp](Strings/771_jewels_and_stones.cpp) [py](Strings/771_jewels_and_stones.py) | O(J + S) | O(J) |
+| [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/) | [cpp](Strings/921_min_add_to_make_valid.cpp) [py](Strings/921_min_add_to_make_valid.py) | O(N) | O(1) |
 
 - **Trees**
 
