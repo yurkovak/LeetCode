@@ -1,4 +1,4 @@
-# HackerRank
+# LeetCode
 Solutions in C++ & Python 3 for LeetCode problems. New problems will be continuously added.  
 
 To compile a *C++* solution run:  
