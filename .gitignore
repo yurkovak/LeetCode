@@ -3,3 +3,4 @@
 main
 .idea/
 __pycache__/
+*.pyc
