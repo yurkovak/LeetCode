@@ -47,4 +47,6 @@ int main(){
     std::string answer;
     List2str(l_sum, answer);
     std::cout << "Sum: " << answer << std::endl;
+
+    return 0;
 }

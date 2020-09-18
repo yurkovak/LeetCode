@@ -47,4 +47,6 @@ int main(){
     }
     
     std::cout << "Largest number: " << Solution().largestNumber(nums) << std::endl;
+
+    return 0;
 }

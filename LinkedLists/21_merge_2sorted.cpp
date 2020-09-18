@@ -45,4 +45,6 @@ int main(){
     std::string answer;
     List2str(l_res, answer);
     std::cout << "Sorted: " << answer << std::endl;
+
+    return 0;
 }

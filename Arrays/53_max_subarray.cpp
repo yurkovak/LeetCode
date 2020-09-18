@@ -38,4 +38,6 @@ int main(){
     }
     
     std::cout << "Sorted colors: " << Solution().maxSubArray(nums) << std::endl;
+
+    return 0;
 }

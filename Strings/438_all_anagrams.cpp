@@ -64,7 +64,9 @@ int main(){
 
     std::vector<int> res = Solution().findAnagrams(s, p);
     std::cout << "Anagrams: ";
-    for (int v: res) 
+    for (auto v: res) 
         std::cout << v << " ";
     std::cout << std::endl;
+
+    return 0;
 }

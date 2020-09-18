@@ -34,4 +34,6 @@ int main(){
     
     std::string answer = Solution().canJump(nums) ? "yes" : "no";
     std::cout << "Can jump: " << answer << std::endl;
+
+    return 0;
 }

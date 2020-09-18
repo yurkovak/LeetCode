@@ -45,6 +45,8 @@ int main(){
     
     Solution().sortColors(nums);
     std::cout << "Sorted colors: ";
-    for (int v: nums) std::cout << v << " ";
+    for (auto v: nums) std::cout << v << " ";
     std::cout << std::endl;
+
+    return 0;
 }

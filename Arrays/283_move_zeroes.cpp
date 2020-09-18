@@ -36,7 +36,9 @@ int main(){
 
     Solution().moveZeroes(nums);
     std::cout << "Zeros moved: ";
-    for (int v : nums)
+    for (auto v : nums)
         std::cout << v << ' ';
     std::cout << std::endl;
+
+    return 0;
 }

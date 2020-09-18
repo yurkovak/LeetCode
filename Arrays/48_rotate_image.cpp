@@ -76,4 +76,6 @@ int main(){
     Solution().rotate(matrix);
     std::cout << "Rotated:" << std::endl;
     printMatrix(matrix);
+
+    return 0;
 }

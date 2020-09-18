@@ -47,4 +47,6 @@ int main(){
     std::cin >> guess;
 
     std::cout << "Hint: " << Solution().getHint(secret, guess) << std::endl;
+    
+    return 0;
 }

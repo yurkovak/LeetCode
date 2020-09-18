@@ -45,4 +45,6 @@ int main(){
     TreeNode* root = string2tree(line);
     std::cout << "Maximum depth (by DFS): " << Solution().maxDepth_DFS(root) << std::endl;
     std::cout << "Maximum depth (by BFS): " << Solution().maxDepth_BFS(root) << std::endl;
+
+    return 0;
 }

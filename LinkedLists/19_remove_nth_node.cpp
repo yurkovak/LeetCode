@@ -44,4 +44,6 @@ int main(){
     std::string answer;
     List2str(l_res, answer);
     std::cout << "After removal: " << answer << std::endl;
+
+    return 0;
 }

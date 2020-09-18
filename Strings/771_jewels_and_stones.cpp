@@ -30,4 +30,6 @@ int main(){
     std::cin >> S;
 
     std::cout << "Jewels in S: " << Solution().numJewelsInStones(J, S) << std::endl;
+
+    return 0;
 }
