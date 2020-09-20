@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <string>
 #include <vector>
 
@@ -7,9 +8,9 @@
 
 class Solution {
 public:
-    std::vector<int> inorderTraversal_DFS(const TreeNode* root) {
+    std::vector<int> inorderTraversal_DFS(const std::shared_ptr<TreeNode>& root) {
         if (!root) return {};
-        
+
         std::vector<int> inorder = inorderTraversal_DFS(root->left);
         inorder.push_back(root->val);
         std::vector<int> right = inorderTraversal_DFS(root->right);
@@ -25,7 +26,7 @@ int main(){
     std::string line;
     std::getline(std::cin, line);
 
-    TreeNode* root = string2tree(line);
+    std::shared_ptr<TreeNode> root = string2tree(line);
     std::vector<int> inorder = Solution().inorderTraversal_DFS(root);
     std::cout << "Inorder traversal: (by DFS): ";
     for (auto v: inorder)
