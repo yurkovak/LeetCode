@@ -19,33 +19,32 @@ TreeNode* string2tree(const std::string &line){
     }
     else return nullptr;
 
-    // read the new level in order: for all current layer nodes fill left & right, left & right
+    // fill in level by level in order: left -> right, left -> right
     std::queue<TreeNode*> level;
     level.push(root);
+    bool left = true;
+    TreeNode* cur_node;
     while (ss.rdbuf()->in_avail()){
-        int new_level_size = level.size();
-        for (int i = 0; i < new_level_size; i++){
-            TreeNode* cur_node = level.front();
-            level.pop();
-            
-            ss >> n_val;
-            if (n_val != "null") {
-                checkNode(cur_node, n_val);
-                TreeNode* new_node = new TreeNode(std::stoi(n_val));
-                cur_node->left = new_node;
-                level.push(new_node);
+        if (left){
+            if (level.size()) {
+                cur_node = level.front();
+                level.pop();
             }
-            else level.push(nullptr);
-
-            ss >> n_val;
-            if (n_val != "null") {
-                checkNode(cur_node, n_val);
-                TreeNode* new_node = new TreeNode(std::stoi(n_val));
-                cur_node->right = new_node;
-                level.push(new_node);
-            }
-            else level.push(nullptr);
+            else cur_node = nullptr;
         }
+            
+        ss >> n_val;
+        if (n_val != "null") {
+            checkNode(cur_node, n_val);
+            TreeNode* new_node = new TreeNode(std::stoi(n_val));
+            if (left)
+                cur_node->left = new_node;
+            else
+                cur_node->right = new_node;
+            level.push(new_node);
+        }
+
+        left = !left;
     }
     return root;
 }

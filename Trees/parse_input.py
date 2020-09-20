@@ -24,31 +24,29 @@ def string2tree(line):
         root = TreeNode(int(n_val))
     else:
         return None
-    
+
+    # fill in level by level in order: left -> right, left -> right
     level = Queue()
     level.put(root)
-    while node_vals.qsize():
-        new_level_size = level.qsize()
-        for _ in range(new_level_size):
-            cur_node = level.get()
-            
-            n_val = node_vals.get() if not node_vals.empty() else 'null'
-            if n_val != 'null':
-                check_node(cur_node, n_val)
-                new_node = TreeNode(int(n_val))
-                cur_node.left = new_node
-                level.put(new_node)
+    left = True
+    while not node_vals.empty():
+        if left:
+            if not level.empty():
+                cur_node = level.get()
             else:
-                level.put(None)
+                cur_node = None
 
-            n_val = node_vals.get() if not node_vals.empty() else 'null'
-            if n_val != 'null':
-                check_node(cur_node, n_val)
-                new_node = TreeNode(int(n_val))
-                cur_node.right = new_node
-                level.put(new_node)
+        n_val = node_vals.get()
+        if n_val != 'null':
+            check_node(cur_node, n_val)
+            new_node = TreeNode(int(n_val))
+            if left:
+                cur_node.left = new_node
             else:
-                level.put(None)
+                cur_node.right = new_node
+            level.put(new_node)
+
+        left = not left
     
     return root
 
