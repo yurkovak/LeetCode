@@ -1,5 +1,6 @@
 #include <algorithm>
 #include <iostream>
+#include <memory>
 #include <string>
 #include <queue>
 
@@ -9,7 +10,7 @@
 class Solution {
 public:
     // DFS: O(N) time, O(logN) space
-    int maxDepth_DFS(const TreeNode* root) {
+    int maxDepth_DFS(const std::shared_ptr<TreeNode>& root) {
         if (!root)
             return 0;
     
@@ -17,15 +18,15 @@ public:
     }
 
     // BFS: O(N) time, O(N) space
-    int maxDepth_BFS(const TreeNode* root) {        
-        std::queue<const TreeNode*> layer;
+    int maxDepth_BFS(const std::shared_ptr<TreeNode>& root) {
+        std::queue<const std::shared_ptr<TreeNode>> layer;
         if (root) layer.push(root);
         
         int count = 0;
         while(!layer.empty()){
             int layer_size = layer.size();
             for (int i = 0; i < layer_size; i++){
-                const TreeNode* cur_node = layer.front();
+                const std::shared_ptr<TreeNode> cur_node = layer.front();
                 layer.pop(); 
                 if(cur_node->left) layer.push(cur_node->left);
                 if(cur_node->right) layer.push(cur_node->right);
@@ -42,7 +43,7 @@ int main(){
     std::string line; 
     std::getline(std::cin, line);
 
-    TreeNode* root = string2tree(line);
+    std::shared_ptr<TreeNode> root = string2tree(line);
     std::cout << "Maximum depth (by DFS): " << Solution().maxDepth_DFS(root) << std::endl;
     std::cout << "Maximum depth (by BFS): " << Solution().maxDepth_BFS(root) << std::endl;
 
