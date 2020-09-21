@@ -60,6 +60,6 @@ And follow the prompts.
 
 | Problem | Solution | Time complexity | Space complexity |
 | ------ | ------ | ------ | ------ |
-| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [cpp](Trees/94_inorder_traversal.cpp) [py](Trees/94_inorder_traversal.py) | O(N) | DFS: O(logN) |
+| [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | [cpp](Trees/94_inorder_traversal.cpp) [py](Trees/94_inorder_traversal.py) | O(N) | O(logN) |
 | [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [cpp](Trees/104_max_depth.cpp) [py](Trees/104_max_depth.py) | O(N) | DFS: O(logN) \| BFS: O(N) |
 
