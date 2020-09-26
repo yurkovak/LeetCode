@@ -1,6 +1,10 @@
 .DS_Store
+
 .vscode/
-main
 .idea/
+CMakeLists.txt
+cmake-build-debug/
+main
+
 __pycache__/
 *.pyc

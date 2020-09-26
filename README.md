@@ -37,6 +37,12 @@ And follow the prompts.
 | [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [cpp](LinkedLists/19_remove_nth_node.cpp) [py](LinkedLists/19_remove_nth_node.py) | O(N) | O(1) |
 | [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [cpp](LinkedLists/21_merge_2sorted.cpp) [py](LinkedLists/21_merge_2sorted.py) | O(N + M) | O(1) |
 
+- **Math**
+
+| Problem | Solution | Time complexity | Space complexity |
+| ------ | ------ | ------ | ------ |
+| [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [cpp](Math/509_fibonacci_number.cpp) [py](Math/509_fibonacci_number.py) | O(N) | O(1) |
+
 - **Sorting**
 
 | Problem | Solution | Time complexity | Space complexity |
