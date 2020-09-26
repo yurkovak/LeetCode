@@ -42,6 +42,7 @@ And follow the prompts.
 | Problem | Solution | Time complexity | Space complexity |
 | ------ | ------ | ------ | ------ |
 | [509. Fibonacci Number](https://leetcode.com/problems/fibonacci-number/) | [cpp](Math/509_fibonacci_number.cpp) [py](Math/509_fibonacci_number.py) | O(N) | O(1) |
+| [1414. Find the Minimum Number of Fibonacci Numbers Whose Sum Is K](https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/) | [cpp](Math/1414_min_fibonacci_numbers.cpp) [py](Math/1414_min_fibonacci_numbers.py) | O(logk) | O(1) |
 
 - **Sorting**
 
