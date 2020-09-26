@@ -22,4 +22,7 @@ void checkNode(const TreeNode* cur_node, const std::string& n_val);
 std::shared_ptr<TreeNode> string2tree(const std::string& line);
 
 
+typedef std::shared_ptr<TreeNode> TreeNode_p;
+
+
 #endif
