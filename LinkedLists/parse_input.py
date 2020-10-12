@@ -7,6 +7,9 @@ class ListNode(object):
 
 
 def List2str(node):
+    if not node:
+        return ''
+
     vals = []
     while node:
         vals.append(str(node.val))
@@ -16,10 +19,17 @@ def List2str(node):
 
 
 def str2List(line):
+    line = line.strip()
+    if not line:
+        return None
+
     l_head = ListNode(None)
     l_tail = l_head
     for v in line.split(' '):
-        l_tail.next = ListNode(int(v))
+        try:
+            l_tail.next = ListNode(int(v))
+        except ValueError as e:
+            raise ValueError('Wrong input formatting, separate nodes values by one space')
         l_tail = l_tail.next
     return l_head.next
 

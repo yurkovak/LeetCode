@@ -36,6 +36,7 @@ And follow the prompts.
 | [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | [cpp](LinkedLists/2_add_two_numbers.cpp) [py](LinkedLists/2_add_two_numbers.py) | O(M + N) | O(max(M, N)) |
 | [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) | [cpp](LinkedLists/19_remove_nth_node.cpp) [py](LinkedLists/19_remove_nth_node.py) | O(N) | O(1) |
 | [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) | [cpp](LinkedLists/21_merge_2sorted.cpp) [py](LinkedLists/21_merge_2sorted.py) | O(N + M) | O(1) |
+| [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [cpp](LinkedLists/206_reverse.cpp) [py](LinkedLists/206_reverse.py) | O(N) | O(1) |
 
 - **Math**
 

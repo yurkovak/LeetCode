@@ -28,8 +28,6 @@ public:
 };
 
 
-
-
 int main(){
     std::string line;
     std::cout << "Space separated values of l: ";
